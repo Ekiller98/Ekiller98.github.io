@@ -1,1 +1,14 @@
-document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
+tailwind.config = {
+  corePlugins: {
+    preflight: false
+  }
+}
+tailwind.config = {
+  theme: {
+    extend:{
+    fontFamily: {
+      'fantasy': ['Impact','Chalkduster'],
+    }
+    }
+  }
+}

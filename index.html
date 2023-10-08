@@ -1,26 +1,42 @@
+<style type="text/tailwindcss">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  p {
+     @apply text-sky-500;
+  }
+  i {
+     @apply p-2 bg-gray-700 rounded-3xl hover:rounded-xl transition-all ease-in-out duration-300 hover:bg-blue-500 hover:text-white cursor-pointer animate-pulse hover:animate-none;
+  }
+}
+</style>
 
-<h1>Welcome to <em>Ethan's</em> Practice Website!</h1>
+<h1 class = "w-[16rem] text-4xl text-teal-200 font-extrabold mx-auto scale-90 hover:scale-100 transition ease-in-out text-center bg-gradient-to-tr from-green-300 via-blue-500 to-purple-600 rounded-lg outline outline-black outline-7 ">Welcome To My Practice Website!
+</h1>
 
-<h2>Im trying to <i>Showcase</i> my knowledge</h2>
+<div class="fixed top-0 left 0 h-screen w-[4rem] bg-gray-900 shadow-2xl">
+  <div class=" relative flex flex-col pt-[1rem] space-y-[4rem] items-center justify-center text-2xl text-blue-500 ">
+<a href="">           
+  <i class="fa-brands fa-discord "></i>
+    </a>
+<a href="https://www.instagram.com/killer.edtz">   
+  <i class="fa-brands fa-instagram "></i>
+    </a>   
+<a href="https://www.linkedin.com/in/ethan-pettis-957648a7/">  
+  <i class="fa-brands fa-linkedin "></i>
+    </a>    
+<a href="https://github.com/Ekiller98">    
+  <i class="fa-brands fa-github "></i>
+    </a>   
+ <a href="">       
+  <i class="fa-brands fa-youtube"></i>
+    </a>  
+  </div>
+</div>
 
-<p>This text that I am currently typing is meant to serve as an example on how to use the paragraph element</p>
-
-<p>So for some reason there is a <strong>STRONG!</strong> element and a <b>Bold</b> that both makes things bold but, strong<br>
-  conveys more meaning. there are also two elements for italics as well which are, <em>EM</em> and <i>I</i> </p>
-
-<p>There are three types of lists. in a ul the order doesnt matter but in an ol the order does matter.<br> 
-  For example, a ul would be the  ingredients needed for a recipe and an ol would be the steps to follow for the recipe.<br>  
-  Defenition lists include terms and defentions for those terms.</p>
-<p><b>Unordered</b></p>
-<ul>
-  <li>flour</li>
-  <li>eggs</li>
-  <li>sugar</li>
-  <li>milk</li>
-  <li>bacon</li>
-  <li>cheese</li>
-  <li>waffles</li>
-</ul>
+<p class=> My name is Ethan Pettis this is my 
+</p>
 
 <p><b>Ordered</b></p>
 <ol>
@@ -48,7 +64,7 @@
 
 <blockquote>
   <p>You can use the block quote and cite elements in order to cite quotes in HTML <q>and you can also use q to quote things in text.</q></p>
-<cite>-Ethan Pettis</cite>
+<cite>-Ethan Pettis </cite>
 </blockquote>
 
 <p><b>DATE</b></p>
@@ -105,7 +121,7 @@ li {
 
 <p>Its <em>Important</em> to always include the <strong>alt, width, and height</strong> elements in every image. Aslo Responsive Images change size depending on the type of screen they are being sent to</p>
 
-<img src= "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/555df920-7bf8-4e36-8b95-c3a4768234ad/d8vthnc-4a0f2b54-673f-4418-83af-4785e853136b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NWRmOTIwLTdiZjgtNGUzNi04Yjk1LWMzYTQ3NjgyMzRhZFwvZDh2dGhuYy00YTBmMmI1NC02NzNmLTQ0MTgtODNhZi00Nzg1ZTg1MzEzNmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oxg5fHJxAcgO-8BPXU-w2sz0QciKU42KNgV-re28ZuY" alt="slim purple-haired anime girl with purple eyes and a scythe" width="280" height="320"
+<img class= "h-fit w-fit" src= "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/555df920-7bf8-4e36-8b95-c3a4768234ad/d8vthnc-4a0f2b54-673f-4418-83af-4785e853136b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NWRmOTIwLTdiZjgtNGUzNi04Yjk1LWMzYTQ3NjgyMzRhZFwvZDh2dGhuYy00YTBmMmI1NC02NzNmLTQ0MTgtODNhZi00Nzg1ZTg1MzEzNmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oxg5fHJxAcgO-8BPXU-w2sz0QciKU42KNgV-re28ZuY" alt="slim purple-haired anime girl with purple eyes and a scythe" width="280" height="320"
      
  srcset="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/555df920-7bf8-4e36-8b95-c3a4768234ad/d8vthnc-4a0f2b54-673f-4418-83af-4785e853136b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NWRmOTIwLTdiZjgtNGUzNi04Yjk1LWMzYTQ3NjgyMzRhZFwvZDh2dGhuYy00YTBmMmI1NC02NzNmLTQ0MTgtODNhZi00Nzg1ZTg1MzEzNmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oxg5fHJxAcgO-8BPXU-w2sz0QciKU42KNgV-re28ZuY 2x,
      https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/555df920-7bf8-4e36-8b95-c3a4768234ad/d8vthnc-4a0f2b54-673f-4418-83af-4785e853136b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NWRmOTIwLTdiZjgtNGUzNi04Yjk1LWMzYTQ3NjgyMzRhZFwvZDh2dGhuYy00YTBmMmI1NC02NzNmLTQ0MTgtODNhZi00Nzg1ZTg1MzEzNmIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oxg5fHJxAcgO-8BPXU-w2sz0QciKU42KNgV-re28ZuY 3x, 
@@ -269,6 +285,42 @@ li {
     <td><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/tufted-titmouse.jpg" alt="" width="360" height="531" ></td>
   </tr>
 </table>
+
+<div class="w-full bg-gray-300 h-screen flex items-center justify-center">
+  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+    <div class="shrink-0">
+      <img class="h-24 w-auto" src="https://pixelprowess.com/i/stargazers/logo_bug_stargazers.svg" alt="logo bug">
+    </div>
+    <div>
+      <div class="text-xl font-medium text-black">Chat</div>
+      <p class="text-slate-500">You have a new message!</p>
+    </div>
+  </div>
+</div>
+
+<a href="#_" class="relative inline-block text-lg group">
+<span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+<span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"> 
+</span>
+<span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+<span class="relative">Button Text</span>
+</span>
+<span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
