@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@layer components {
+  p {
+     @apply text-sky-500;
+  }
+  i {
+     @apply p-2 bg-gray-700 rounded-3xl hover:rounded-xl transition-all ease-in-out duration-300 hover:bg-blue-500 hover:text-white cursor-pointer animate-pulse hover:animate-none;
+  }
+
+}
